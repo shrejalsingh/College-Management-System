@@ -1,28 +1,14 @@
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradient Text</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
-            margin: 0;
-        }
-        h1 {
-            font-size: 3em;
-            font-weight: bold;
-            background: linear-gradient(45deg, #ff5733, #ffbd33, #33ff57, #3380ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
-</head>
-<body>
-    <h1>College Management System for 7th Semester</h1>
-</body>
-</html>
+<svg width="500" height="100" viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" gradientTransform="rotate(45)">
+      <stop offset="0%" stop-color="#ff5733" />
+      <stop offset="50%" stop-color="#ffbd33" />
+      <stop offset="100%" stop-color="#3380ff" />
+    </linearGradient>
+  </defs>
+  <text x="50%" y="50%" font-size="30" font-weight="bold" fill="url(#gradient)" text-anchor="middle" dominant-baseline="middle">
+    College Management System
+  </text>
+</svg>
+
